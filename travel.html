@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wanderlust Horizons - Curated luxury expeditions, cultural wonders, and unforgettable journeys around the globe.">
+  <title>Wanderlust Horizons | Luxury Travel Agency &amp; Expeditions</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Custom Travel Stylesheet -->
+  <link rel="stylesheet" href="css/travel.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#travelNavbar" data-bs-offset="100">
+
+  <!-- Top Switcher Banner -->
+  <aside class="top-notice-bar d-flex justify-content-between align-items-center flex-wrap" aria-label="Project Switcher Bar">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap py-1">
+      <div>
+        <span class="badge bg-primary me-2">Checkpoint 2</span>
+        <span>Bootstrap Components Checkpoint : Travel Agency Landing Page</span>
+      </div>
+      <div class="d-flex align-items-center gap-3">
+        <a href="index.html" class="d-inline-flex align-items-center gap-1">
+          <i class="bi bi-grid-fill"></i> Checkpoints Hub
+        </a>
+        <span class="text-secondary">|</span>
+        <a href="restaurant.html" class="d-inline-flex align-items-center gap-1">
+          <i class="bi bi-egg-fried"></i> Switch to Restaurant Page &rarr;
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       NAVBAR
+       Requirements:
+       - Navigation bar with the agency's name/logo on the left
+       - Navigation links (Home, Destinations, Tours, Contact) on the right
+       ========================================================================= -->
+  <header class="sticky-top">
+    <nav id="travelNavbar" class="navbar navbar-expand-lg navbar-light navbar-travel" aria-label="Travel Agency Navigation">
+      <div class="container">
+        <!-- Agency Name / Logo on the Left -->
+        <a class="navbar-brand brand-font" href="#home">
+          <i class="bi bi-compass-fill"></i>
+          <span>Wanderlust<span class="text-primary">Horizons</span></span>
+        </a>
+
+        <!-- Responsive Hamburger Toggle -->
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#travelNavContent" aria-controls="travelNavContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links on the Right (Home, Destinations, Tours, Contact) -->
+        <div class="collapse navbar-collapse" id="travelNavContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#destinations">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tours">Tours</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a href="#contact" class="btn btn-travel-primary btn-sm px-4">
+                <i class="bi bi-send me-1"></i> Plan Your Trip
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =========================================================================
+       HERO SECTION
+       Requirements:
+       - Background image showcasing a scenic travel destination
+       - Heading, subheading, and prominent call-to-action button in the center
+       ========================================================================= -->
+  <section id="home" class="hero-travel-section" aria-label="Hero Showcase">
+    <div class="container hero-travel-content">
+      <!-- Badge / Subtitle Pill -->
+      <div class="hero-travel-badge">
+        <i class="bi bi-globe-americas"></i> Award-Winning Luxury Travel Agency
+      </div>
+
+      <!-- Heading in the Center -->
+      <h1 class="hero-travel-title">
+        Discover The World’s Most Breathtaking Destinations
+      </h1>
+
+      <!-- Subheading in the Center -->
+      <p class="hero-travel-subtitle">
+        Immerse yourself in extraordinary adventures, bespoke private itineraries, and unforgettable luxury experiences crafted just for you.
+      </p>
+
+      <!-- Prominent Call-to-Action Button in the Center -->
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="#destinations" class="btn btn-travel-accent btn-lg shadow">
+          <i class="bi bi-geo-alt-fill me-2"></i>Explore Destinations
+        </a>
+        <a href="#tours" class="btn btn-travel-outline btn-lg">
+          <i class="bi bi-compass me-2"></i>View Tour Packages
+        </a>
+      </div>
+
+      <!-- Quick Agency Credential Row -->
+      <div class="hero-stats-row">
+        <div class="row g-4 text-center">
+          <div class="col-6 col-md-3 stat-item">
+            <h3>75+</h3>
+            <p>Global Destinations</p>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <h3>14,000+</h3>
+            <p>Happy Travelers</p>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <h3>99.4%</h3>
+            <p>Satisfaction Rate</p>
+          </div>
+          <div class="col-6 col-md-3 stat-item">
+            <h3>24/7</h3>
+            <p>Concierge Support</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       DESTINATIONS SECTION
+       Requirements:
+       - Grid layout to display images and brief descriptions of at least three travel destinations
+       - Utilize Bootstrap cards for each destination, including:
+         * Image
+         * Title
+         * Description
+         * "Learn More" button
+       ========================================================================= -->
+  <section id="destinations" class="py-5 my-3" aria-label="Destinations Grid">
+    <div class="container py-4">
+      
+      <!-- Section Title & Intro -->
+      <div class="text-center mb-5">
+        <span class="section-badge-pill">Featured Escapes</span>
+        <h2 class="display-6 fw-bold mb-3">Trending Travel Destinations</h2>
+        <p class="text-secondary mx-auto" style="max-width: 650px;">
+          Choose from handpicked global marvels. Each destination offers boutique accommodations, private transfers, and curated local discoveries.
+        </p>
+      </div>
+
+      <!-- Destinations Grid Layout (Bootstrap Grid: container > row > col-12 col-md-6 col-lg-4) -->
+      <div class="row g-4">
+        
+        <!-- Destination Card 1: Santorini, Greece -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 destination-card">
+            <div class="destination-img-wrap">
+              <img src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=800&q=80" 
+                   class="card-img-top destination-card-img" 
+                   alt="Santorini, Greece with whitewashed houses and blue domes"
+                   loading="lazy">
+              <span class="destination-tag-badge">
+                <i class="bi bi-sun-fill text-warning"></i> Mediterranean
+              </span>
+              <span class="destination-price-badge">
+                $1,899 / person
+              </span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Santorini, Greece</h3>
+              <p class="card-text">
+                Marvel at idyllic whitewashed villages cascading down dramatic volcanic caldera cliffs overlooking sapphire Aegean sunsets.
+              </p>
+              <button type="button" class="btn btn-outline-primary rounded-pill w-100 fw-semibold" data-destination-key="santorini">
+                <i class="bi bi-info-circle me-1"></i> Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination Card 2: Kyoto, Japan -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 destination-card">
+            <div class="destination-img-wrap">
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=800&q=80" 
+                   class="card-img-top destination-card-img" 
+                   alt="Traditional temple and pagodas in Kyoto, Japan"
+                   loading="lazy">
+              <span class="destination-tag-badge">
+                <i class="bi bi-flower2 text-danger"></i> Cultural Heritage
+              </span>
+              <span class="destination-price-badge">
+                $2,499 / person
+              </span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Kyoto, Japan</h3>
+              <p class="card-text">
+                Wander through mystical emerald bamboo groves, thousand-year-old Shinto shrines, sacred Zen gardens, and serene tea houses.
+              </p>
+              <button type="button" class="btn btn-outline-primary rounded-pill w-100 fw-semibold" data-destination-key="kyoto">
+                <i class="bi bi-info-circle me-1"></i> Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination Card 3: Swiss Alps, Switzerland -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 destination-card">
+            <div class="destination-img-wrap">
+              <img src="https://images.unsplash.com/photo-1530122037265-a5f1f91d3b99?auto=format&fit=crop&w=800&q=80" 
+                   class="card-img-top destination-card-img" 
+                   alt="Majestic snow-capped mountain peaks in the Swiss Alps"
+                   loading="lazy">
+              <span class="destination-tag-badge">
+                <i class="bi bi-snow text-info"></i> Mountain Trek
+              </span>
+              <span class="destination-price-badge">
+                $2,850 / person
+              </span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Swiss Alps, Switzerland</h3>
+              <p class="card-text">
+                Experience world-famous panoramic cogwheel railways, snow-dusted alpine chalets, glacial lakes, and the iconic Matterhorn.
+              </p>
+              <button type="button" class="btn btn-outline-primary rounded-pill w-100 fw-semibold" data-destination-key="swiss">
+                <i class="bi bi-info-circle me-1"></i> Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination Card 4: Serengeti Safari, Tanzania -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 destination-card">
+            <div class="destination-img-wrap">
+              <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=800&q=80" 
+                   class="card-img-top destination-card-img" 
+                   alt="Wild elephants and wildlife under acacia tree in Serengeti"
+                   loading="lazy">
+              <span class="destination-tag-badge">
+                <i class="bi bi-binoculars-fill text-warning"></i> Safari Wildlife
+              </span>
+              <span class="destination-price-badge">
+                $3,650 / person
+              </span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Serengeti, Tanzania</h3>
+              <p class="card-text">
+                Witness the timeless drama of the Great Wildlife Migration, luxury tented camps, and sunrise hot air balloon rides over the savanna.
+              </p>
+              <button type="button" class="btn btn-outline-primary rounded-pill w-100 fw-semibold" data-destination-key="serengeti">
+                <i class="bi bi-info-circle me-1"></i> Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination Card 5: Banff & Canadian Rockies -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 destination-card">
+            <div class="destination-img-wrap">
+              <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?auto=format&fit=crop&w=800&q=80" 
+                   class="card-img-top destination-card-img" 
+                   alt="Emerald turquoise Lake Louise surrounded by Canadian Rocky Mountains"
+                   loading="lazy">
+              <span class="destination-tag-badge">
+                <i class="bi bi-tree-fill text-success"></i> National Park
+              </span>
+              <span class="destination-price-badge">
+                $1,550 / person
+              </span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Banff Rockies, Canada</h3>
+              <p class="card-text">
+                Glide over turquoise glacial waters at Lake Louise and explore scenic wilderness highways flanked by crystalline icefields.
+              </p>
+              <button type="button" class="btn btn-outline-primary rounded-pill w-100 fw-semibold" data-destination-key="banff">
+                <i class="bi bi-info-circle me-1"></i> Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Destination Card 6: Amalfi Coast, Italy -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card h-100 destination-card">
+            <div class="destination-img-wrap">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=800&q=80" 
+                   class="card-img-top destination-card-img" 
+                   alt="Pastel-colored coastal houses on Positano cliff, Amalfi Coast"
+                   loading="lazy">
+              <span class="destination-tag-badge">
+                <i class="bi bi-water text-primary"></i> Coastal Luxury
+              </span>
+              <span class="destination-price-badge">
+                $2,100 / person
+              </span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Amalfi Coast, Italy</h3>
+              <p class="card-text">
+                Sunbathe on pastel cliffside verandas, cruise around the mythical Isle of Capri, and sample sweet organic limoncello by the sea.
+              </p>
+              <button type="button" class="btn btn-outline-primary rounded-pill w-100 fw-semibold" data-destination-key="amalfi">
+                <i class="bi bi-info-circle me-1"></i> Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       TOURS SECTION
+       Requirements:
+       - Use Bootstrap's ACCORDION COMPONENT to showcase different tour packages
+       - Each accordion item should have:
+         * Title
+         * Brief description
+         * "View Details" link
+       ========================================================================= -->
+  <section id="tours" class="tours-section py-5" aria-label="Tour Packages Accordion">
+    <div class="container py-4">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <span class="section-badge-pill">Curated Packages</span>
+        <h2 class="display-6 fw-bold mb-3">Popular All-Inclusive Tour Packages</h2>
+        <p class="text-secondary mx-auto" style="max-width: 650px;">
+          Explore our signature tour packages with fully guided expeditions, 5-star handpicked hotels, and authentic local experiences.
+        </p>
+      </div>
+
+      <!-- Bootstrap Accordion Component -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10">
+          <div class="accordion accordion-tours" id="tourPackagesAccordion">
+            
+            <!-- Accordion Item 1 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTourOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTourOne" aria-expanded="true" aria-controls="collapseTourOne">
+                  <div class="d-flex align-items-center justify-content-between w-100 me-3 flex-wrap gap-2">
+                    <span class="d-flex align-items-center gap-2">
+                      <i class="bi bi-tsunami text-primary fs-5"></i>
+                      <span>Grand Aegean &amp; Cyclades Island Yacht Voyage</span>
+                    </span>
+                    <span class="badge bg-primary rounded-pill px-3 py-2 small">10 Days / 9 Nights &bull; $2,899</span>
+                  </div>
+                </button>
+              </h3>
+              <div id="collapseTourOne" class="accordion-collapse collapse show" aria-labelledby="headingTourOne" data-bs-parent="#tourPackagesAccordion">
+                <div class="accordion-body">
+                  <p class="text-secondary mb-3">
+                    Embark on an extraordinary island-hopping voyage across Athens, Mykonos, and Santorini. Includes private catamaran charter, sunset wine cellar tours, visits to archaeological sanctuaries, and five-star seaside suites.
+                  </p>
+                  
+                  <div class="mb-3">
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Private Yacht Charter</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> All Breakfasts &amp; 4 Gourmet Dinners</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Dedicated Local Historian</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Airport &amp; Port Transfers</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top border-light-subtle flex-wrap gap-2">
+                    <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i> Departures: Weekly (May – October)</span>
+                    <a href="#contact" class="btn btn-sm btn-primary rounded-pill px-3 btn-tour-detail" data-tour-title="Grand Aegean & Cyclades Island Yacht Voyage">
+                      View Details &amp; Check Availability &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 2 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTourTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTourTwo" aria-expanded="false" aria-controls="collapseTourTwo">
+                  <div class="d-flex align-items-center justify-content-between w-100 me-3 flex-wrap gap-2">
+                    <span class="d-flex align-items-center gap-2">
+                      <i class="bi bi-train-front text-primary fs-5"></i>
+                      <span>Swiss Glacier Express &amp; Alpine Panorama Trek</span>
+                    </span>
+                    <span class="badge bg-primary rounded-pill px-3 py-2 small">8 Days / 7 Nights &bull; $3,250</span>
+                  </div>
+                </button>
+              </h3>
+              <div id="collapseTourTwo" class="accordion-collapse collapse" aria-labelledby="headingTourTwo" data-bs-parent="#tourPackagesAccordion">
+                <div class="accordion-body">
+                  <p class="text-secondary mb-3">
+                    Journey through the Swiss canton of Valais and the Bernese Oberland. Ride the Glacier Express panoramic rail car through 91 tunnels and 291 bridges, ascend to the Jungfraujoch "Top of Europe", and stay in historic mountain chalets.
+                  </p>
+
+                  <div class="mb-3">
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> 1st-Class Rail Passes Included</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Matterhorn Cogwheel Excursion</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Artisanal Cheese &amp; Chocolate Workshop</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Luxury Spa Access</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top border-light-subtle flex-wrap gap-2">
+                    <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i> Departures: Year-Round</span>
+                    <a href="#contact" class="btn btn-sm btn-primary rounded-pill px-3 btn-tour-detail" data-tour-title="Swiss Glacier Express & Alpine Panorama Trek">
+                      View Details &amp; Check Availability &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 3 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTourThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTourThree" aria-expanded="false" aria-controls="collapseTourThree">
+                  <div class="d-flex align-items-center justify-content-between w-100 me-3 flex-wrap gap-2">
+                    <span class="d-flex align-items-center gap-2">
+                      <i class="bi bi-gem text-primary fs-5"></i>
+                      <span>Spiritual Japan: Tokyo Lights to Kyoto Zen Temples</span>
+                    </span>
+                    <span class="badge bg-primary rounded-pill px-3 py-2 small">12 Days / 11 Nights &bull; $3,780</span>
+                  </div>
+                </button>
+              </h3>
+              <div id="collapseTourThree" class="accordion-collapse collapse" aria-labelledby="headingTourThree" data-bs-parent="#tourPackagesAccordion">
+                <div class="accordion-body">
+                  <p class="text-secondary mb-3">
+                    A harmonic journey blending ultra-modern Tokyo with Kyoto's ancient serenity and Mount Fuji hot spring ryokans. Includes Shinkansen bullet train rides, private tea ceremony masters, and Tsukiji market gourmet tastings.
+                  </p>
+
+                  <div class="mb-3">
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Unlimited JR Green Pass</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> 2 Nights Authentic Ryokan Stay</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Private Tea Ceremony Masterclass</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> 24/7 English-speaking Concierge</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top border-light-subtle flex-wrap gap-2">
+                    <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i> Departures: Spring (Sakura) &amp; Autumn (Momiji)</span>
+                    <a href="#contact" class="btn btn-sm btn-primary rounded-pill px-3 btn-tour-detail" data-tour-title="Spiritual Japan: Tokyo Lights to Kyoto Zen Temples">
+                      View Details &amp; Check Availability &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion Item 4 -->
+            <div class="accordion-item">
+              <h3 class="accordion-header" id="headingTourFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTourFour" aria-expanded="false" aria-controls="collapseTourFour">
+                  <div class="d-flex align-items-center justify-content-between w-100 me-3 flex-wrap gap-2">
+                    <span class="d-flex align-items-center gap-2">
+                      <i class="bi bi-compass-fill text-primary fs-5"></i>
+                      <span>Great Serengeti Safari &amp; Ngorongoro Crater Expedition</span>
+                    </span>
+                    <span class="badge bg-primary rounded-pill px-3 py-2 small">9 Days / 8 Nights &bull; $4,190</span>
+                  </div>
+                </button>
+              </h3>
+              <div id="collapseTourFour" class="accordion-collapse collapse" aria-labelledby="headingTourFour" data-bs-parent="#tourPackagesAccordion">
+                <div class="accordion-body">
+                  <p class="text-secondary mb-3">
+                    An untamed wildlife adventure across Tanzania's most iconic landscapes. Spot the Big Five, track migrating wildebeest herds, and float in a hot air balloon over endless savannah plains followed by bush breakfasts.
+                  </p>
+
+                  <div class="mb-3">
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Sunrise Hot Air Balloon Safari</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Customized 4x4 Safari Land Cruisers</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> Luxury Tented Camp Accommodations</span>
+                    <span class="tour-highlight-badge"><i class="bi bi-check-lg text-success"></i> All Park Conservation Fees Included</span>
+                  </div>
+
+                  <div class="d-flex justify-content-between align-items-center pt-2 border-top border-light-subtle flex-wrap gap-2">
+                    <span class="text-muted small"><i class="bi bi-calendar3 me-1"></i> Departures: Monthly</span>
+                    <a href="#contact" class="btn btn-sm btn-primary rounded-pill px-3 btn-tour-detail" data-tour-title="Great Serengeti Safari & Ngorongoro Crater Expedition">
+                      View Details &amp; Check Availability &rarr;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       CONTACT FORM SECTION
+       Requirements:
+       - Design a contact form section using Bootstrap's form components
+       - Include fields for:
+         * Name
+         * Email
+         * Destination of interest
+         * Message
+       ========================================================================= -->
+  <section id="contact" class="contact-section-travel py-5" aria-label="Travel Inquiry Contact Form">
+    <div class="container py-5">
+      
+      <!-- Section Header -->
+      <div class="text-center mb-5">
+        <span class="section-badge-pill">Start Your Adventure</span>
+        <h2 class="display-6 fw-bold mb-3">Request a Custom Itinerary</h2>
+        <p class="text-secondary mx-auto" style="max-width: 650px;">
+          Tell us about your dream journey. Our luxury travel curators will design an exclusive customized travel proposal suited to your preferences.
+        </p>
+      </div>
+
+      <div class="row g-4 align-items-stretch justify-content-center">
+        
+        <!-- Contact Form Column -->
+        <div class="col-12 col-lg-7">
+          <div class="travel-form-card">
+            
+            <div id="travelFormAlert"></div>
+
+            <form id="travelContactForm" novalidate>
+              <div class="row g-3">
+                
+                <!-- Field: Name (Requirement) -->
+                <div class="col-12 col-md-6">
+                  <label for="travelName" class="form-label fw-semibold text-dark">
+                    Your Name <span class="text-danger">*</span>
+                  </label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0 text-muted">
+                      <i class="bi bi-person-fill"></i>
+                    </span>
+                    <input type="text" class="form-control border-start-0 ps-0" id="travelName" placeholder="e.g. Alexander Hamilton" required>
+                  </div>
+                  <div class="invalid-feedback small">
+                    Please provide your name.
+                  </div>
+                </div>
+
+                <!-- Field: Email (Requirement) -->
+                <div class="col-12 col-md-6">
+                  <label for="travelEmail" class="form-label fw-semibold text-dark">
+                    Email Address <span class="text-danger">*</span>
+                  </label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0 text-muted">
+                      <i class="bi bi-envelope-fill"></i>
+                    </span>
+                    <input type="email" class="form-control border-start-0 ps-0" id="travelEmail" placeholder="alex@wanderlust.com" required>
+                  </div>
+                  <div class="invalid-feedback small">
+                    Please provide a valid email address.
+                  </div>
+                </div>
+
+                <!-- Field: Destination of Interest (Requirement) -->
+                <div class="col-12">
+                  <label for="travelDestination" class="form-label fw-semibold text-dark">
+                    Destination of Interest <span class="text-danger">*</span>
+                  </label>
+                  <div class="input-group">
+                    <span class="input-group-text bg-light border-end-0 text-muted">
+                      <i class="bi bi-pin-map-fill"></i>
+                    </span>
+                    <select class="form-select border-start-0 ps-0" id="travelDestination" required>
+                      <option value="" disabled selected>Select your preferred destination...</option>
+                      <option value="Santorini, Greece">Santorini &amp; The Aegean Isles (Greece)</option>
+                      <option value="Kyoto, Japan">Kyoto &amp; Mount Fuji Cultural Immersion (Japan)</option>
+                      <option value="Swiss Alps, Switzerland">Swiss Alps &amp; Glacier Express (Switzerland)</option>
+                      <option value="Serengeti, Tanzania">Serengeti &amp; Ngorongoro Safari (Tanzania)</option>
+                      <option value="Banff Rockies, Canada">Banff &amp; Canadian Rocky Mountains (Canada)</option>
+                      <option value="Amalfi Coast, Italy">Amalfi Coast &amp; Capri Island (Italy)</option>
+                      <option value="Custom Global Expedition">Other / Custom Global Expedition</option>
+                    </select>
+                  </div>
+                  <div class="invalid-feedback small">
+                    Please select a destination of interest.
+                  </div>
+                </div>
+
+                <!-- Travel Dates & Party Size Helpers -->
+                <div class="col-12 col-md-6">
+                  <label for="travelDate" class="form-label fw-semibold text-dark">Estimated Travel Date</label>
+                  <input type="date" class="form-control" id="travelDate">
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="travelTravelers" class="form-label fw-semibold text-dark">Number of Travelers</label>
+                  <select class="form-select" id="travelTravelers">
+                    <option value="1 Traveler">Solo Traveler</option>
+                    <option value="2 Travelers" selected>Couple (2 Travelers)</option>
+                    <option value="3-5 Travelers">Small Group / Family (3 - 5)</option>
+                    <option value="6+ Travelers">Large Group (6+ Travelers)</option>
+                  </select>
+                </div>
+
+                <!-- Field: Message (Requirement) -->
+                <div class="col-12">
+                  <label for="travelMessage" class="form-label fw-semibold text-dark">
+                    Your Message / Travel Vision <span class="text-danger">*</span>
+                  </label>
+                  <textarea class="form-control" id="travelMessage" rows="4" placeholder="Tell us about special occasions, preferred pace, dream activities, or luxury preferences..." required></textarea>
+                  <div class="invalid-feedback small">
+                    Please enter your message or travel vision.
+                  </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 pt-2">
+                  <button type="submit" class="btn btn-travel-accent w-100 py-3 fs-6">
+                    <i class="bi bi-airplane-fill me-2"></i>Submit Travel Inquiry
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+          </div>
+        </div>
+
+        <!-- Sidebar Information Card -->
+        <div class="col-12 col-lg-5">
+          <div class="travel-info-box d-flex flex-column justify-content-between">
+            <div>
+              <span class="badge bg-warning text-dark mb-3">Wanderlust Concierge</span>
+              <h3 class="fw-bold mb-3">Why Book With Us?</h3>
+              <p class="text-white-50 mb-4">
+                We design bespoke journeys that transcend the ordinary. Every hotel is personally inspected, every guide is locally revered, and every itinerary is 100% tailor-made.
+              </p>
+
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <i class="bi bi-shield-lock-fill text-warning fs-4"></i>
+                <div>
+                  <h6 class="fw-bold mb-0">100% Financial Protection</h6>
+                  <small class="text-white-50">Fully bonded and insured under global travel consumer protection.</small>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-3">
+                <i class="bi bi-award-fill text-warning fs-4"></i>
+                <div>
+                  <h6 class="fw-bold mb-0">VIP Access &amp; Upgrades</h6>
+                  <small class="text-white-50">Complimentary room upgrades, daily breakfasts, and resort credits.</small>
+                </div>
+              </div>
+
+              <div class="d-flex align-items-start gap-3 mb-4">
+                <i class="bi bi-headset text-warning fs-4"></i>
+                <div>
+                  <h6 class="fw-bold mb-0">24/7 In-Country Assistance</h6>
+                  <small class="text-white-50">Your dedicated concierge is always a quick text or phone call away.</small>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Hotline Box -->
+            <div class="p-3 rounded-3 bg-white bg-opacity-10 border border-white border-opacity-25">
+              <div class="d-flex align-items-center gap-3">
+                <i class="bi bi-telephone-inbound-fill fs-2 text-info"></i>
+                <div>
+                  <small class="text-white-50 d-block">Speak to a Senior Specialist</small>
+                  <strong class="text-white fs-5">+1 (800) 555-WANDER</strong>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       FOOTER SECTION
+       Requirements:
+       - Design a footer with copyright information and social media icons
+       ========================================================================= -->
+  <footer class="footer-travel" aria-label="Travel Agency Footer">
+    <div class="container">
+      <div class="row gy-4 align-items-center">
+        
+        <!-- Agency Brand & Copyright -->
+        <div class="col-12 col-md-6 text-center text-md-start">
+          <div class="brand-font fs-4 text-white mb-1">
+            <i class="bi bi-compass-fill text-info me-2"></i>WANDERLUST HORIZONS
+          </div>
+          <p class="mb-0 small text-white-50">
+            &copy; 2026 Wanderlust Horizons Travel Agency. All rights reserved. Crafted with Bootstrap 5 Components.
+          </p>
+        </div>
+
+        <!-- Social Media Icons (Requirement) -->
+        <div class="col-12 col-md-6 text-center text-md-end">
+          <div class="d-inline-flex gap-2">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="travel-social-btn" aria-label="Visit our Instagram">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="travel-social-btn" aria-label="Visit our Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="travel-social-btn" aria-label="Visit our Twitter/X">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="travel-social-btn" aria-label="Visit our LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="travel-social-btn" aria-label="Watch our YouTube Travel Documentaries">
+              <i class="bi bi-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       BOOTSTRAP MODAL: Destination Learn More Details
+       ========================================================================= -->
+  <div class="modal fade" id="destinationModal" tabindex="-1" aria-labelledby="modalDestTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content border-0 shadow-lg rounded-4 overflow-hidden">
+        
+        <div class="position-relative">
+          <img id="modalDestImg" src="" class="w-100" style="height: 320px; object-fit: cover;" alt="">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3 p-2 bg-dark rounded-circle" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="position-absolute bottom-0 start-0 p-4 text-white" style="background: linear-gradient(180deg, transparent, rgba(15, 23, 42, 0.95)); width: 100%;">
+            <div class="d-flex align-items-center gap-2 mb-1">
+              <span id="modalDestDuration" class="badge bg-primary"></span>
+              <span id="modalDestPrice" class="badge bg-warning text-dark fw-bold"></span>
+            </div>
+            <h3 id="modalDestTitle" class="modal-title fs-4 fw-bold mb-0"></h3>
+          </div>
+        </div>
+
+        <div class="modal-body p-4">
+          <h5 class="fw-bold mb-2 text-dark">Expedition Overview</h5>
+          <p id="modalDestDesc" class="text-secondary mb-4"></p>
+
+          <h6 class="fw-bold text-dark mb-2">Curated Highlights &amp; Inclusions</h6>
+          <ul id="modalDestHighlights" class="list-unstyled text-secondary mb-4"></ul>
+        </div>
+
+        <div class="modal-footer bg-light p-3 border-top-0 d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-secondary rounded-pill px-4" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="modalDestInquireBtn" class="btn btn-travel-accent rounded-pill px-4">
+            <i class="bi bi-chat-quote-fill me-1"></i> Inquire About This Destination
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap 5.3.3 JS Bundle (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+  <!-- Custom Travel JS -->
+  <script src="js/travel.js"></script>
+</body>
+</html>
+

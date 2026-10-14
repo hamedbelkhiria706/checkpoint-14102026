@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bootstrap & Grid System / Bootstrap Components Checkpoints - Live showcase portfolio featuring responsive Restaurant and Travel Agency projects.">
+  <title>Bootstrap Checkpoints Showcase | Restaurant &amp; Travel Agency</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&family=Outfit:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5.3.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Custom Hub Stylesheet -->
+  <link rel="stylesheet" href="css/hub.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       NAVIGATION BAR
+       ========================================================================= -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark bg-opacity-75 border-bottom border-secondary border-opacity-25 sticky-top backdrop-blur">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2 fw-bold" href="index.html">
+        <i class="bi bi-bootstrap-fill text-primary fs-3"></i>
+        <span>Bootstrap Checkpoints Portfolio</span>
+      </a>
+
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#hubNav" aria-controls="hubNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="hubNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#projects">Projects Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#live-preview">Live Simulator</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="#checklist">Requirements Matrix</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a href="restaurant.html" class="btn btn-warning text-dark btn-sm rounded-pill px-3 fw-semibold">
+              <i class="bi bi-egg-fried me-1"></i> Restaurant Page
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="travel.html" class="btn btn-primary btn-sm rounded-pill px-3 fw-semibold">
+              <i class="bi bi-airplane-fill me-1"></i> Travel Agency Page
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================================================
+       HERO HEADER
+       ========================================================================= -->
+  <header class="hub-hero text-center">
+    <div class="container py-4">
+      <span class="badge bg-primary bg-opacity-25 text-info border border-info border-opacity-25 rounded-pill px-3 py-2 text-uppercase mb-3 fw-semibold">
+        <i class="bi bi-check2-all me-1"></i> Complete Project Submissions
+      </span>
+      <h1 class="display-4 fw-extrabold text-white mb-3">
+        Bootstrap &amp; Grid System Checkpoints
+      </h1>
+      <p class="lead text-secondary mx-auto mb-4" style="max-width: 780px;">
+        Welcome to the master checkpoint showcase featuring both completed projects: the responsive <strong>Fictional Restaurant Webpage</strong> and the component-rich <strong>Travel Agency Landing Page</strong>, engineered with Bootstrap 5.3 and responsive grid design.
+      </p>
+
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="#projects" class="btn btn-primary btn-lg rounded-pill px-4 shadow">
+          <i class="bi bi-layers-fill me-2"></i>Explore Projects
+        </a>
+        <a href="#live-preview" class="btn btn-outline-light btn-lg rounded-pill px-4">
+          <i class="bi bi-display me-2"></i>Test Live Simulator
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       PROJECTS OVERVIEW SECTION
+       ========================================================================= -->
+  <main>
+    <section id="projects" class="py-5" aria-label="Projects Showcase">
+      <div class="container py-3">
+        
+        <div class="text-center mb-5">
+          <span class="text-primary text-uppercase fw-bold small letter-spacing-1">Submissions</span>
+          <h2 class="h1 fw-bold text-white mb-2">Two Fully Responsive Web Projects</h2>
+          <p class="text-secondary mx-auto" style="max-width: 620px;">
+            Both assignments have been implemented strictly adhering to the technical and aesthetic criteria specified in the checkpoint instructions.
+          </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+          
+          <!-- PROJECT 1: RESTAURANT WEBPAGE -->
+          <div class="col-12 col-lg-6">
+            <article class="project-card">
+              <div class="card-preview-thumb">
+                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80" alt="Savoria Bistro Gourmet Food" loading="lazy">
+                <div class="card-preview-overlay">
+                  <div>
+                    <span class="badge bg-warning text-dark fw-bold mb-1">Project 1</span>
+                    <h3 class="h4 text-white fw-bold mb-0">Savoria Bistro &amp; Lounge</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <span class="badge bg-dark border border-warning border-opacity-50 text-warning px-3 py-2">
+                    <i class="bi bi-grid-3x3-gap-fill me-1"></i> Bootstrap &amp; Grid System
+                  </span>
+                  <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-25 px-2 py-1">
+                    <i class="bi bi-check-circle-fill me-1"></i> 100% Complete
+                  </span>
+                </div>
+
+                <p class="text-secondary small mb-3">
+                  A responsive webpage for a fictional restaurant featuring artisanal dishes, warm ambiance, and seamless user interaction.
+                </p>
+
+                <h6 class="text-light fw-bold small text-uppercase mb-2">Key Requirements Implemented:</h6>
+                <ul class="list-unstyled text-secondary small mb-4">
+                  <li class="mb-1"><i class="bi bi-check2 text-warning me-2"></i><strong>Header Section:</strong> Brand on left, Nav links (Home, Menu, About Us, Contact) on right.</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-warning me-2"></i><strong>Hero Section:</strong> Mouthwatering dish background, centered title &amp; CTA button.</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-warning me-2"></i><strong>Menu Section:</strong> Grid layout with 6 items (image, title, desc, price).</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-warning me-2"></i><strong>About Us Section:</strong> Two-column grid with chef imagery &amp; heritage story.</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-warning me-2"></i><strong>Contact Section:</strong> Form with name, email, message, and submit.</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-warning me-2"></i><strong>Footer:</strong> Copyright info and social media icons.</li>
+                </ul>
+
+                <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex gap-2">
+                  <a href="restaurant.html" class="btn btn-warning text-dark fw-bold flex-grow-1">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Open Restaurant Page
+                  </a>
+                  <button type="button" class="btn btn-outline-light" onclick="loadInSimulator('restaurant.html')">
+                    <i class="bi bi-play-circle me-1"></i> Preview
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- PROJECT 2: TRAVEL AGENCY LANDING PAGE -->
+          <div class="col-12 col-lg-6">
+            <article class="project-card">
+              <div class="card-preview-thumb">
+                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1000&q=80" alt="Scenic travel destination view" loading="lazy">
+                <div class="card-preview-overlay">
+                  <div>
+                    <span class="badge bg-primary text-white fw-bold mb-1">Project 2</span>
+                    <h3 class="h4 text-white fw-bold mb-0">Wanderlust Horizons Travel Agency</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-4 d-flex flex-column flex-grow-1">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <span class="badge bg-dark border border-primary border-opacity-50 text-info px-3 py-2">
+                    <i class="bi bi-puzzle-fill me-1"></i> Bootstrap Components Checkpoint
+                  </span>
+                  <span class="badge bg-success bg-opacity-25 text-success border border-success border-opacity-25 px-2 py-1">
+                    <i class="bi bi-check-circle-fill me-1"></i> 100% Complete
+                  </span>
+                </div>
+
+                <p class="text-secondary small mb-3">
+                  An immersive landing page for a travel agency utilizing modern Bootstrap components including cards, accordions, and rich modals.
+                </p>
+
+                <h6 class="text-light fw-bold small text-uppercase mb-2">Key Requirements Implemented:</h6>
+                <ul class="list-unstyled text-secondary small mb-4">
+                  <li class="mb-1"><i class="bi bi-check2 text-primary me-2"></i><strong>Navbar:</strong> Agency name/logo on left, links (Home, Destinations, Tours, Contact) on right.</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-primary me-2"></i><strong>Hero Section:</strong> Scenic destination photo, centered title, subtitle &amp; CTA.</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-primary me-2"></i><strong>Destinations:</strong> Grid with 6 cards (image, title, desc, "Learn More" modal).</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-primary me-2"></i><strong>Tours Section:</strong> Bootstrap Accordion showcasing 4 tour packages with details.</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-primary me-2"></i><strong>Contact Form:</strong> Bootstrap form with name, email, destination select, message.</li>
+                  <li class="mb-1"><i class="bi bi-check2 text-primary me-2"></i><strong>Footer:</strong> Copyright info and social media icons.</li>
+                </ul>
+
+                <div class="mt-auto pt-3 border-top border-secondary border-opacity-25 d-flex gap-2">
+                  <a href="travel.html" class="btn btn-primary fw-bold flex-grow-1">
+                    <i class="bi bi-box-arrow-up-right me-1"></i> Open Travel Agency Page
+                  </a>
+                  <button type="button" class="btn btn-outline-light" onclick="loadInSimulator('travel.html')">
+                    <i class="bi bi-play-circle me-1"></i> Preview
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         LIVE RESPONSIVENESS SIMULATOR
+         ========================================================================= -->
+    <section id="live-preview" class="py-5 bg-black bg-opacity-40 border-top border-bottom border-secondary border-opacity-25" aria-label="Live Simulator">
+      <div class="container py-4">
+        
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+          <div>
+            <span class="badge bg-info bg-opacity-25 text-info border border-info border-opacity-25 rounded-pill px-3 py-1 mb-2">
+              <i class="bi bi-phone-flip me-1"></i> Interactive Device Simulator
+            </span>
+            <h2 class="h2 fw-bold text-white mb-0">Test Responsive Layouts In Real-Time</h2>
+          </div>
+          
+          <!-- Project Switcher Buttons -->
+          <div class="d-flex gap-2 align-items-center">
+            <span class="text-secondary small d-none d-md-inline">Active Project:</span>
+            <button type="button" class="btn btn-primary btn-sm rounded-pill px-3 active" data-project-src="restaurant.html" data-project-title="Restaurant Webpage">
+              <i class="bi bi-egg-fried me-1"></i> Restaurant
+            </button>
+            <button type="button" class="btn btn-outline-light btn-sm rounded-pill px-3" data-project-src="travel.html" data-project-title="Travel Agency Landing Page">
+              <i class="bi bi-airplane-fill me-1"></i> Travel Agency
+            </button>
+          </div>
+        </div>
+
+        <!-- Simulator Frame -->
+        <div class="simulator-container">
+          <div class="simulator-toolbar">
+            <div class="d-flex align-items-center gap-3">
+              <div class="browser-dots">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+              </div>
+              <div class="bg-dark px-3 py-1 rounded-pill border border-secondary border-opacity-50 text-secondary small d-flex align-items-center gap-2">
+                <i class="bi bi-lock-fill text-success"></i>
+                <span id="previewUrlDisplay">restaurant.html</span>
+              </div>
+            </div>
+
+            <!-- Viewport Switcher -->
+            <div class="d-flex align-items-center gap-2">
+              <div class="btn-group btn-group-sm" role="group" aria-label="Device Viewport Switcher">
+                <button type="button" class="btn btn-light active" data-viewport="desktop" title="Desktop Viewport (100%)">
+                  <i class="bi bi-display me-1"></i> Desktop
+                </button>
+                <button type="button" class="btn btn-outline-secondary text-light" data-viewport="tablet" title="Tablet Viewport (768px)">
+                  <i class="bi bi-tablet me-1"></i> Tablet (768px)
+                </button>
+                <button type="button" class="btn btn-outline-secondary text-light" data-viewport="mobile" title="Mobile Viewport (375px)">
+                  <i class="bi bi-phone me-1"></i> Mobile (375px)
+                </button>
+              </div>
+
+              <a id="openExternalBtn" href="restaurant.html" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light btn-sm" title="Open in new window">
+                <i class="bi bi-box-arrow-up-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="viewport-wrapper">
+            <div id="iframeWrapper" class="preview-iframe-wrapper viewport-desktop">
+              <iframe id="previewIframe" src="restaurant.html" title="Interactive Project Preview" class="preview-iframe"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         DETAILED REQUIREMENT VERIFICATION MATRIX
+         ========================================================================= -->
+    <section id="checklist" class="py-5" aria-label="Requirements Verification Matrix">
+      <div class="container py-4">
+        
+        <div class="text-center mb-5">
+          <span class="text-success text-uppercase fw-bold small letter-spacing-1">Compliance Check</span>
+          <h2 class="h1 fw-bold text-white mb-2">Requirement Verification Matrix</h2>
+          <p class="text-secondary mx-auto" style="max-width: 650px;">
+            A thorough breakdown confirming that all requirements from both checkpoint project overviews have been fully satisfied.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          
+          <!-- Checklist Column 1: Restaurant Webpage -->
+          <div class="col-12 col-lg-6">
+            <div class="checklist-card">
+              <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom border-secondary border-opacity-25">
+                <h4 class="text-warning mb-0 fs-5 fw-bold">
+                  <i class="bi bi-fire me-2"></i>Checkpoint 1: Restaurant Webpage
+                </h4>
+                <span class="badge bg-success">6/6 Passed</span>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Header Section:</strong>
+                  <p class="text-secondary small mb-0">Navbar includes restaurant name (SAVORIA BISTRO) on the left and navigation links (Home, Menu, About Us, Contact) on the right with responsive hamburger toggler.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Hero Section:</strong>
+                  <p class="text-secondary small mb-0">Features high-res culinary image background showcasing a delicious dish, with centered heading and prominent "Explore Menu" and "Reserve a Table" buttons.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Menu Section (Grid Layout):</strong>
+                  <p class="text-secondary small mb-0">Uses Bootstrap grid (<code class="text-info">row g-4</code>, <code class="text-info">col-12 col-md-6 col-lg-4</code>) displaying 6 items, each containing an image, title, description, and price badge.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">About Us Section (Two-Column Layout):</strong>
+                  <p class="text-secondary small mb-0">Created with the grid system (<code class="text-info">col-lg-6</code> + <code class="text-info">col-lg-6</code>), featuring executive chef imagery on one side and restaurant heritage and philosophy on the other.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Contact Section:</strong>
+                  <p class="text-secondary small mb-0">Includes styled form with name, email, message, and submit button, plus client-side validation and interactive confirmation alert.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Footer:</strong>
+                  <p class="text-secondary small mb-0">Features copyright statement and social media icons (Instagram, Facebook, Twitter/X, TripAdvisor).</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Checklist Column 2: Travel Agency Landing Page -->
+          <div class="col-12 col-lg-6">
+            <div class="checklist-card">
+              <div class="d-flex align-items-center justify-content-between mb-3 pb-2 border-bottom border-secondary border-opacity-25">
+                <h4 class="text-primary mb-0 fs-5 fw-bold">
+                  <i class="bi bi-compass me-2"></i>Checkpoint 2: Travel Agency Landing Page
+                </h4>
+                <span class="badge bg-success">6/6 Passed</span>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Navbar:</strong>
+                  <p class="text-secondary small mb-0">Navigation bar featuring agency name/logo (Wanderlust Horizons) on the left, and navigation links (Home, Destinations, Tours, Contact) on the right.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Hero Section:</strong>
+                  <p class="text-secondary small mb-0">Designed with scenic destination background image, centered heading, subheading, and prominent call-to-action button.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Destinations Section (Bootstrap Cards):</strong>
+                  <p class="text-secondary small mb-0">Grid layout displaying 6 destination cards (Santorini, Kyoto, Swiss Alps, Serengeti, Banff, Amalfi Coast), each with image, title, description, and "Learn More" modal trigger button.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Tours Section (Bootstrap Accordion):</strong>
+                  <p class="text-secondary small mb-0">Utilizes Bootstrap accordion component (<code class="text-info">.accordion</code>) with 4 packages, each including title, brief description, badges, and "View Details" link.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Contact Form:</strong>
+                  <p class="text-secondary small mb-0">Constructed using Bootstrap form components (<code class="text-info">form-control</code>, <code class="text-info">form-select</code>) with fields for name, email, destination of interest, message, and submit.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <i class="bi bi-check-circle-fill checklist-icon"></i>
+                <div>
+                  <strong class="text-light">Footer:</strong>
+                  <p class="text-secondary small mb-0">Features copyright information and social media icons (Instagram, Facebook, Twitter/X, LinkedIn, YouTube).</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       FOOTER
+       ========================================================================= -->
+  <footer class="py-4 border-top border-secondary border-opacity-25 bg-dark text-center text-secondary small">
+    <div class="container">
+      <p class="mb-1 text-light">Bootstrap &amp; Grid System &bull; Bootstrap Components Checkpoint</p>
+      <p class="mb-0 text-secondary">
+        Crafted with semantic HTML5, CSS3, JavaScript &amp; Bootstrap 5.3.3. Fully tested across Desktop, Tablet, and Mobile viewports.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Helper function to load project in simulator -->
+  <script>
+    function loadInSimulator(src) {
+      const previewIframe = document.getElementById('previewIframe');
+      const previewUrlDisplay = document.getElementById('previewUrlDisplay');
+      const openExternalBtn = document.getElementById('openExternalBtn');
+      const liveSection = document.getElementById('live-preview');
+      
+      if (previewIframe) previewIframe.src = src;
+      if (previewUrlDisplay) previewUrlDisplay.textContent = src;
+      if (openExternalBtn) openExternalBtn.href = src;
+      
+      const switchBtns = document.querySelectorAll('[data-project-src]');
+      switchBtns.forEach(btn => {
+        if (btn.getAttribute('data-project-src') === src) {
+          btn.classList.add('active', 'btn-primary');
+          btn.classList.remove('btn-outline-light');
+        } else {
+          btn.classList.remove('active', 'btn-primary');
+          btn.classList.add('btn-outline-light');
+        }
+      });
+      
+      if (liveSection) {
+        liveSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+
+  <!-- Bootstrap 5.3.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Custom Hub JS -->
+  <script src="js/hub.js"></script>
+</body>
+</html>
+

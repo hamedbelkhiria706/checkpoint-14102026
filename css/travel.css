@@ -1,0 +1,434 @@
+/* ==========================================================================
+   WANDERLUST HORIZONS - Custom Stylesheet
+   Bootstrap 5 Components & Responsive Travel Agency Landing Page
+   ========================================================================== */
+
+:root {
+  --travel-primary: #0284c7;
+  --travel-primary-hover: #0369a1;
+  --travel-secondary: #0ea5e9;
+  --travel-accent: #f97316;
+  --travel-accent-hover: #ea580c;
+  --travel-dark: #0f172a;
+  --travel-darker: #090d16;
+  --travel-card-bg: #ffffff;
+  --travel-muted: #64748b;
+  --travel-light-bg: #f8fafc;
+  --travel-font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
+  --travel-font-body: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--travel-font-body);
+  color: #334155;
+  background-color: var(--travel-light-bg);
+  line-height: 1.65;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .brand-font {
+  font-family: var(--travel-font-heading);
+  color: var(--travel-dark);
+  letter-spacing: -0.02em;
+}
+
+/* --------------------------------------------------------------------------
+   Top Notice / Switcher Banner
+   -------------------------------------------------------------------------- */
+.top-notice-bar {
+  background: linear-gradient(90deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+  font-size: 0.85rem;
+  padding: 0.45rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.top-notice-bar a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+.top-notice-bar a:hover {
+  text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   Navbar Customization
+   -------------------------------------------------------------------------- */
+.navbar-travel {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  transition: all 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--travel-dark) !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-brand i {
+  color: var(--travel-primary);
+  font-size: 1.6rem;
+}
+
+.nav-link {
+  color: #475569 !important;
+  font-weight: 600;
+  font-size: 0.98rem;
+  padding: 0.5rem 1rem !important;
+  transition: color 0.25s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--travel-primary) !important;
+}
+
+.btn-travel-primary {
+  background-color: var(--travel-primary);
+  color: #ffffff !important;
+  font-weight: 600;
+  border: 1px solid var(--travel-primary);
+  border-radius: 50px;
+  padding: 0.65rem 1.75rem;
+  transition: all 0.3s ease;
+}
+
+.btn-travel-primary:hover {
+  background-color: var(--travel-primary-hover);
+  border-color: var(--travel-primary-hover);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(2, 132, 199, 0.35);
+}
+
+.btn-travel-accent {
+  background-color: var(--travel-accent);
+  color: #ffffff !important;
+  font-weight: 600;
+  border: 1px solid var(--travel-accent);
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-travel-accent:hover {
+  background-color: var(--travel-accent-hover);
+  border-color: var(--travel-accent-hover);
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.35);
+}
+
+.btn-travel-outline {
+  background-color: transparent;
+  color: #ffffff !important;
+  border: 2px solid #ffffff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.btn-travel-outline:hover {
+  background-color: #ffffff;
+  color: var(--travel-dark) !important;
+  transform: translateY(-2px);
+}
+
+/* --------------------------------------------------------------------------
+   Hero Section (Scenic Destination Background)
+   -------------------------------------------------------------------------- */
+.hero-travel-section {
+  position: relative;
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.65) 0%, rgba(15, 23, 42, 0.8) 100%),
+              url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&w=1920&q=80') center center / cover no-repeat;
+  padding: 5rem 1rem;
+}
+
+.hero-travel-content {
+  position: relative;
+  z-index: 2;
+  max-width: 860px;
+}
+
+.hero-travel-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #bae6fd;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  padding: 0.45rem 1.4rem;
+  border-radius: 50px;
+  margin-bottom: 1.5rem;
+}
+
+.hero-travel-title {
+  font-size: clamp(2.5rem, 5.5vw, 4.4rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.12;
+  margin-bottom: 1.5rem;
+}
+
+.hero-travel-subtitle {
+  font-size: clamp(1.1rem, 2.2vw, 1.35rem);
+  color: #e2e8f0;
+  margin-bottom: 2.5rem;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-stats-row {
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.stat-item h3 {
+  color: #38bdf8;
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.2rem;
+}
+
+.stat-item p {
+  color: #94a3b8;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Destinations Cards Section
+   -------------------------------------------------------------------------- */
+.section-badge-pill {
+  display: inline-block;
+  background-color: #e0f2fe;
+  color: var(--travel-primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.35rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 0.75rem;
+}
+
+.destination-card {
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  background: #ffffff;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(2, 132, 199, 0.18);
+}
+
+.destination-img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.destination-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.destination-card:hover .destination-card-img {
+  transform: scale(1.08);
+}
+
+.destination-tag-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(6px);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.destination-price-badge {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  background: var(--travel-primary);
+  color: #ffffff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.destination-card .card-body {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.destination-card .card-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.destination-card .card-text {
+  color: var(--travel-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+/* --------------------------------------------------------------------------
+   Tours Section (Bootstrap Accordion Component)
+   -------------------------------------------------------------------------- */
+.tours-section {
+  background-color: #f1f5f9;
+}
+
+.accordion-tours .accordion-item {
+  border: 0;
+  margin-bottom: 1rem;
+  border-radius: 16px !important;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.accordion-tours .accordion-button {
+  background-color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--travel-dark);
+  padding: 1.4rem 1.75rem;
+  border: 0;
+  box-shadow: none;
+}
+
+.accordion-tours .accordion-button:not(.collapsed) {
+  background-color: #e0f2fe;
+  color: var(--travel-primary);
+}
+
+.accordion-tours .accordion-button::after {
+  background-size: 1.25rem;
+  transition: transform 0.3s ease;
+}
+
+.accordion-tours .accordion-body {
+  background-color: #ffffff;
+  padding: 1.5rem 1.75rem 2rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.tour-highlight-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  color: #475569;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* --------------------------------------------------------------------------
+   Contact Form Section
+   -------------------------------------------------------------------------- */
+.contact-section-travel {
+  background-color: #ffffff;
+}
+
+.travel-form-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+  padding: 2.75rem;
+}
+
+.travel-info-box {
+  background: linear-gradient(135deg, #0f172a 0%, #0369a1 100%);
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 2.75rem;
+  height: 100%;
+}
+
+.travel-info-box h3, .travel-info-box h4 {
+  color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   Footer
+   -------------------------------------------------------------------------- */
+.footer-travel {
+  background-color: var(--travel-darker);
+  color: #94a3b8;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.travel-social-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  transition: all 0.25s ease;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.travel-social-btn:hover {
+  background-color: var(--travel-primary);
+  color: #ffffff;
+  transform: translateY(-3px);
+}
+
